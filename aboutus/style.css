@@ -1,0 +1,216 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+/* Header */
+header {
+    background-color: var(--secondary-color);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--dark-gray);
+    font-weight: 500;
+    padding: 5px 10px;
+    transition: color 0.3s;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+    color: var(--primary-color);
+}
+
+.header-buttons button {
+    border: none;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 5px 15px;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.header-buttons .search-btn {
+    background-color: transparent;
+    color: var(--dark-gray);
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.header-buttons .contact-btn {
+    background-color: var(--primary-color);
+}
+
+/* Journey Section */
+.journey-section {
+    display: flex;
+    padding: 2rem 5%;
+    gap: 2rem;
+    background: white;
+}
+
+.journey-image {
+    flex: 1;
+}
+
+.journey-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.journey-content {
+    flex: 1;
+    padding: 2rem;
+}
+
+.journey-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.journey-content h2 span {
+    color: #7AB393;
+}
+
+.read-more {
+    display: inline-block;
+    background: #7AB393;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 1rem;
+}
+
+/* Mission Section */
+.mission-section {
+    display: flex;
+    padding: 4rem 5%;
+    background: #5B756B;
+    color: white;
+}
+
+.mission-content {
+    flex: 1;
+    padding-right: 2rem;
+}
+
+.mission-image {
+    flex: 1;
+}
+
+.mission-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Team Section */
+.team-section {
+    padding: 4rem 5%;
+    text-align: center;
+    background: white;
+}
+
+.team-members {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.team-member {
+    text-align: center;
+}
+
+.team-member img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.social-link {
+    background: #7AB393;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Footer */
+footer {
+    background: #4F6F61;
+    color: white;
+    padding: 3rem 5%;
+    margin-top: 3rem;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.footer-col h3 {
+    margin-bottom: 1rem;
+}
+
+.footer-col a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.terms {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+.terms a {
+    color: #6B9080;
+}
+.scroll-top.visible {
+    opacity: 1;
+}
